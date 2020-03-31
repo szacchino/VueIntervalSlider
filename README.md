@@ -2,7 +2,7 @@
 
 Simple Vue component that allows selection of time based interval and returns its ISO value (to be used in psql queries, as an example). The component is based on Buefy library.
 
-![Screenshot](img/IntervalSlider.jpg)
+![Screenshot](img/IntervalSlider.png)
 
 ## Example
 
