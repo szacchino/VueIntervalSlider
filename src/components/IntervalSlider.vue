@@ -28,18 +28,25 @@
 
 <script>
 export default {
+  props: {
+    intervals: {
+      type: Array,
+      default: function() {
+        return [
+          { label: "Anni", prefix: "P", suffix: "Y", min: 1, max: 10 },
+          { label: "Mesi", prefix: "P", suffix: "M", min: 1, max: 12 },
+          { label: "Settimane", prefix: "P", suffix: "W", min: 1, max: 52 },
+          { label: "Giorni", prefix: "P", suffix: "D", min: 1, max: 31 },
+          { label: "Ore", prefix: "PT", suffix: "H", min: 1, max: 23 },
+          { label: "Minuti", prefix: "PT", suffix: "M", min: 15, max: 59 }
+        ];
+      }
+    }
+  },
   data() {
     return {
       selectedIndex: 0,
-      intervalValue: 15,
-      intervals: [
-        { label: "Anni", prefix: "P", suffix: "Y", min: 1, max: 10 },
-        { label: "Mesi", prefix: "P", suffix: "M", min: 1, max: 12 },
-        { label: "Settimane", prefix: "P", suffix: "W", min: 1, max: 52 },
-        { label: "Giorni", prefix: "P", suffix: "D", min: 1, max: 31 },
-        { label: "Ore", prefix: "PT", suffix: "H", min: 1, max: 23 },
-        { label: "Minuti", prefix: "PT", suffix: "M", min: 15, max: 59 }
-      ]
+      intervalValue: 15
     };
   },
   computed: {

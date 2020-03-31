@@ -1,3 +1,10 @@
+# Description
+
+Simple vue component that allows selection of time based interval and returns its ISO value (to be used in psql queries, as an example)
+
+## Example
+
+```javascript
 <template>
   <div id="app">
     <IntervalSlider v-model="isointerval" :intervals="intervals"></IntervalSlider>
@@ -38,3 +45,5 @@ export default {
   margin-top: 60px;
 }
 </style>
+
+```
