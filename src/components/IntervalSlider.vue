@@ -21,6 +21,7 @@
         v-model="intervalValue"
         type="is-info"
         :tooltip="false"
+        rounded="true"
       ></b-slider>
     </b-field>
   </div>
