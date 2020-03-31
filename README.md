@@ -1,2 +1,0 @@
-# VueIntervalSlider
-Created with CodeSandbox
