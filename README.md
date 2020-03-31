@@ -1,6 +1,8 @@
 # Description
 
-Simple vue component that allows selection of time based interval and returns its ISO value (to be used in psql queries, as an example)
+Simple Vue component that allows selection of time based interval and returns its ISO value (to be used in psql queries, as an example). The component is based on Buefy library.
+
+![](./img/IntervalSlider.jpg])
 
 ## Example
 
@@ -25,7 +27,7 @@ export default {
         { label: "Weeks", prefix: "P", suffix: "W", min: 1, max: 52 },
         { label: "Days", prefix: "P", suffix: "D", min: 1, max: 31 },
         { label: "Hours", prefix: "PT", suffix: "H", min: 1, max: 23 },
-        { label: "Months", prefix: "PT", suffix: "M", min: 15, max: 59 }
+        { label: "Minutes", prefix: "PT", suffix: "M", min: 15, max: 59 }
       ]
     }
   },
